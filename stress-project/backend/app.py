@@ -17,7 +17,11 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True)
 app.register_blueprint(wearable_bp)
 
-BASE      = os.path.dirname(__file__)
+# Initialize database for Render/Gunicorn
+init_db()
+print("Database initialized successfully")
+
+BASE = os.path.dirname(__file__)
 MODEL_DIR = os.path.join(BASE, "models")
 
 def load(fname):
