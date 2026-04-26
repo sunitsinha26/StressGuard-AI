@@ -38,8 +38,8 @@
     }
   },
   "gradient_boosting": {
-    "cv_f1_mean": 0.9575,
-    "cv_f1_std": 0.0057,
+    "cv_f1_mean": 0.9572,
+    "cv_f1_std": 0.0061,
     "train_f1": 1.0,
     "report": {
       "0": {
